@@ -1,4 +1,4 @@
-package com.example.newmoviesplayground.adapter
+package com.example.newmoviesplayground.presentation.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,17 +6,14 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import com.example.newmoviesplayground.R
-import com.example.newmoviesplayground.model.Movie
+import com.example.newmoviesplayground.domain.model.Movie
 import kotlinx.android.synthetic.main.item_movie.view.*
 
 class MovieAdapter : RecyclerView.Adapter<MovieAdapter.MovieViewHolder>() {
 
-        val movieList = mutableListOf<Movie>()
+        private val movieList = mutableListOf<Movie>()
 
-        inner class MovieViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-
-
-        }
+        inner class MovieViewHolder(view: View) : RecyclerView.ViewHolder(view)
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MovieViewHolder {
             val view =

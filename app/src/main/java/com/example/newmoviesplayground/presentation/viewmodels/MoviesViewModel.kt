@@ -1,11 +1,10 @@
-package com.example.newmoviesplayground.ui
+package com.example.newmoviesplayground.presentation.viewmodels
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.newmoviesplayground.model.Movie
-import com.example.newmoviesplayground.model.Movies
-import com.example.newmoviesplayground.repository.MovieRepository
+import com.example.newmoviesplayground.domain.model.Movie
+import com.example.newmoviesplayground.domain.repository.MovieRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
 import timber.log.Timber
@@ -16,8 +15,7 @@ class MoviesViewModel @Inject constructor(
     private val movieRepository: MovieRepository
 ) : ViewModel() {
     private val _newMovies = MutableLiveData<List<Movie>>()
-    val newMovies: LiveData<List<Movie>>
-        get() = _newMovies
+    val newMovies: LiveData<List<Movie>> = _newMovies
 
     init {
         movieRepository.getNewMovies()

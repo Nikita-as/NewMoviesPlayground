@@ -1,6 +1,6 @@
-package com.example.newmoviesplayground.api
+package com.example.newmoviesplayground.data.remote
 
-import com.example.newmoviesplayground.model.Movie
+import com.example.newmoviesplayground.domain.model.Movie
 import io.reactivex.rxjava3.core.Single
 import retrofit2.http.GET
 

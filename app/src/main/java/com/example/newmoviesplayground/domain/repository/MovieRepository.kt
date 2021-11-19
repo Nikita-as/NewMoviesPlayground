@@ -1,7 +1,7 @@
-package com.example.newmoviesplayground.repository
+package com.example.newmoviesplayground.domain.repository
 
-import com.example.newmoviesplayground.api.MovieService
-import com.example.newmoviesplayground.model.Movie
+import com.example.newmoviesplayground.data.remote.MovieService
+import com.example.newmoviesplayground.domain.model.Movie
 import io.reactivex.rxjava3.core.Single
 import io.reactivex.rxjava3.schedulers.Schedulers
 import javax.inject.Inject

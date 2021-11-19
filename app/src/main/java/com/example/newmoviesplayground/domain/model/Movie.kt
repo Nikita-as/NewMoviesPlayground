@@ -1,4 +1,4 @@
-package com.example.newmoviesplayground.model
+package com.example.newmoviesplayground.domain.model
 
 data class Movie(
     val id: Int?,

@@ -1,6 +1,6 @@
 package com.example.newmoviesplayground.di
 
-import com.example.newmoviesplayground.api.MovieService
+import com.example.newmoviesplayground.data.remote.MovieService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
